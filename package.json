@@ -1,5 +1,6 @@
 {
   "name": "cctv",
+  "proxy": "https://127.0.0.1:5000",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -10,10 +11,12 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.1.1",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "react-script-tag": "^1.1.2",
-    "stripe": "^8.120.0"
+    "stripe": "^8.120.0",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",

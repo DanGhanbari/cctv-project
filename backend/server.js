@@ -9,14 +9,16 @@ import data from "./data";
 
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send(data.items);
+app.get("/api/camera", (req, res) => {
+  res.send(data.items.itemCamera);
+});
+app.get("/api/DVR", (req, res) => {
+  res.send(data.items.itemDVR);
 });
 
 app.listen(5000, () => {
-  console.log("server started at http://localhost:5000");
+  console.log("server started at https://localhost:5000");
 });
-
 
 // const express = require("express");
 // const app = express();
